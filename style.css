@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Roboto:ital,wght@1,900&display=swap');
+
+.game{
+    
+    width: 600px;
+    height: 200px;
+margin: auto;
+    border: 2px solid black;
+}
+
+#dino{
+    height: 50px;
+    width: 50px;
+    background-image:url('./trex.png');
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0%
+    {
+      top:150px;
+    }
+
+    30%{
+        top:130px;
+    }
+
+    50%{
+         top:80px;
+    }
+
+    80%{
+       top:130px;
+    }
+
+    100%{
+        top:150px;
+    }
+}
+
+#cac{
+    position:relative;
+    height: 40px;
+    width: 20px;
+    background-image: url(./cactus.png);
+    background-size: 20px 40px;
+
+    top:110px;
+    left:580px;
+
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+      left: 580px;
+    }
+  
+    100% {
+      left: -20px;
+    }
+  }
+
+  .txt{
+      margin: 10px;
+      height: 100px;
+      width: auto;
+      text-align: center;
+      color: aliceblue;
+      background-color: black;
+      font-family: 'Comic Neue', cursive;
+font-family: 'Roboto', sans-serif;
+font-size: 50px;
+  }
